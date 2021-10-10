@@ -155,9 +155,55 @@ a{
 /* Menu Lateral */
 .MenuLateral{
     grid-area: MenuLateral;
-    background: whitesmoke;
+    background: white;
 }
 
+.MenuLateral a {
+    display: block;
+    padding: 15px 35px;
+    color: black;
+}
+
+.MenuLateral a:hover {
+    background: #e5e5e5;
+}
+
+.MenuLateral a.active {
+    background: #e5e5e5;
+    font-weight: bold;
+}
+
+.MenuLateral .fas{
+    color: black;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.MenuLateral .far{
+    color: black;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.MenuLateral .fab{
+    color: black;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.MenuLateral a.active .fas{
+    color: red;
+}
+
+.MenuLateral hr {
+    margin: 20px 0;
+    border: 1px solid #dfdfdf;
+}
+
+/* Zona principal de videos */
 .Main{
     grid-area: Main;
     background: gray;
