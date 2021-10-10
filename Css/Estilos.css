@@ -139,6 +139,19 @@ a{
     background: #e7e7e7;
 }
 
+.Encabezado .botonesHeader .Avatar {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.Encabezado .botonesHeader .Avatar img {
+    vertical-align: top;
+    width: 100%;
+    border-radius: 100%;
+}
+
 /* Menu Lateral */
 .MenuLateral{
     grid-area: MenuLateral;
