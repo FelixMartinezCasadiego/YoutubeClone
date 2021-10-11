@@ -30,7 +30,7 @@ a{
 }
 
 .contenedor.active {
-    grid-template-columns: 300px auto;
+    grid-template-columns: minmax(300px, 18%) auto;
 }
 
 /* Estilo Encabezado */
@@ -208,5 +208,84 @@ a{
 /* Zona principal de videos */
 .Main{
     grid-area: Main;
-    background: gray;
+    background: #f9f9f9;
+    padding: 40px;
+}
+
+.Main .titulo{
+    margin-bottom: 20px;
+}
+
+.Main .gridVideos {
+    display: grid;
+    grid-gap: 40px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Main .gridVideos .video {
+    width: 100%;
+    display: block;
+}
+
+.Main .gridVideos .video img { 
+    width: 100%;
+}
+
+/* Parte Responsive */
+
+@media screen and (max-width: 1200px) {
+    .Main .gridVideos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Encabezado .contenedorLogo .logo span {
+        display: none;
+    }
+
+    .Encabezado .barraBusqueda input {
+        min-width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Main .gridVideos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-rows: auto;
+    }
+
+    .Encabezado {
+        padding: 20px;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        grid-template-areas:    "contenedorLogo botonesHeader"
+                                "barraBusqueda barraBusqueda";
+    }
+
+    .Encabezado .contenedorLogo .logo span {
+        display: inline;
+    }
+
+    .Encabezado .barraBusqueda input {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .Encabezado .contenedorLogo .logo span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Main .gridVideos {
+        grid-template-columns: 1fr;
+    }
+
+    .Encabezado .contenedorLogo .logo span {
+        display: none;
+    }
 }
