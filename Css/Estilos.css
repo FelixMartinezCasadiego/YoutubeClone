@@ -156,12 +156,14 @@ a{
 .MenuLateral{
     grid-area: MenuLateral;
     background: white;
+    overflow: hidden;
 }
 
 .MenuLateral a {
     display: block;
-    padding: 15px 35px;
+    padding: 15px 40px;
     color: black;
+    min-width: 800px;
 }
 
 .MenuLateral a:hover {
