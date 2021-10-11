@@ -12,17 +12,17 @@ El objetivo de este repositorio consiste en realizar un primer vistazo de la pá
 ## Screenshots del Proyecto
 
 ### Visualización de página con pantallas superiores 1200px
-![] (Imagenes/Imagen1.png)
+![](Imagenes/Imagen1.png)
 
 ### Visualización de página con pantallas de 1200px a 992px
-![] (Imagenes/Imagen2.png)
+![](Imagenes/Imagen2.png)
 
 ### Visualización de página con pantallas de 992px a 768px
-![] (Imagenes/Imagen3.png)
+![](Imagenes/Imagen3.png)
 
 ### Visualización de página con pantallas menores a 576px
-![] (Imagenes/Imagen4.png)
+![](Imagenes/Imagen4.png)
 
 ### Cambio de pantalla al seleccionar barra lateral o disminur ancho
-![] (Imagenes/Imagen5.png)
+![](Imagenes/Imagen5.png)
 
